@@ -36,3 +36,24 @@ GATTTGGGGTTCAAAGCAGTATCGATCAAATAGTAAATCCATTTGTTCAACTCACAGTTT
 - drive5: Bioinformatics software and services. FASTQ files. Дата обращения: 13 декабря 2019. Архивировано 2 декабря 2019 года.
 
 `Категория: Биоинформатика`
+
+# http://scikit-bio.org/docs/latest/generated/skbio.io.format.fastq.html
+### FASTQ format (skbio.io.format.fastq)
+
+Формат файла **FASTQ (fastq)** хранит биологические (например, нуклеотидные) последовательности и оценки их качества в простом текстовом формате, удобном для чтения человеком и удобном для анализа. Формат файла был изобретен Джимом Малликином в институте Wellcome Trust Sanger, но не получил официального определения, хотя неофициально он стал стандартным форматом файла для хранения данных последовательности с высокой пропускной способностью. 
+
+Концептуально файл FASTQ похож на парные файлы FASTA и QUAL в том смысле, что в нем хранятся как биологические последовательности, так и их оценки качества. FASTQ отличается от FASTA/QUAL тем, что показатели качества хранятся в том же файле, что и данные о биологической последовательности.
+
+Пример файла в формате FASTQ, содержащего две последовательности ДНК и их оценки качества:
+
+```
+@seq1 description 1
+AACACCAAACTTCTCCACCACGTGAGCTACAAAAG
++
+````Y^T]`]c^cabcacc`^Lb^ccYT\T\Y\WF
+@seq2 description 2
+TATGTATATATAACATATACATATATACATACATA
++
+]KZ[PY]_[YY^```ac^\\`bT``c`\aT``bbb
+```
+
