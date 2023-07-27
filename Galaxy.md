@@ -66,19 +66,19 @@ Get a first look at the Galaxy platform for data analysis. We start with a short
 
 # Оглавление (Agenda):
 1) Overview
-        - 1.1. What does Galaxy look like?
+- 1.1. What does Galaxy look like?
 2) Key Galaxy actions
-        - 2.1. Name your current history
-        - 2.2. Upload a file
-        - 2.3. Use a tool
-        - 2.4. View results
-        - 2.5. Run another tool
-        - 2.6. Re-run that tool with changed settings
-        - 2.7. Share your history
-        - 2.8. Convert your analysis history into a workflow
-        - 2.9. Create a new history
-        - 2.10 Look at all your histories
-        - 2.11 Run workflow in the new history
+- 2.1. Name your current history
+- 2.2. Upload a file
+- 2.3. Use a tool
+- 2.4. View results
+- 2.5. Run another tool
+- 2.6. Re-run that tool with changed settings
+- 2.7. Share your history
+- 2.8. Convert your analysis history into a workflow
+- 2.9. Create a new history
+- 2.10 Look at all your histories
+- 2.11 Run workflow in the new history
 3) Conclusion
 
 # What does Galaxy look like?
