@@ -142,10 +142,14 @@ GTTGCTTCTGGCGTGGGGTGGGGGGG
 # Galaxy #
 
 1) Зарегистрируемся и подтвердим в email аккаунт на сайте Galaxy https://usegalaxy.org/
-2) Автоматически созданный проект Unnamed history можно переименовать, например, в NGS results, меню `User -> Histories` - А затем выбрав в выпадающем списке Rename.
-3) Загрузим наши упакованные файлы на сервер, кликнув иконку загрузки: `upload data`
-
-
+2) Автоматически созданный проект Unnamed history можно переименовать, например, в NGS results, меню `User -> Histories` - А затем выбрав в выпадающем списке `Rename`.
+3) Загрузим наши упакованные файлы на сервер, кликнув иконку загрузки: `upload data`.
+   > 230210_HSGA.Exome.cito_7539.read1.fastq (1).bz2
+   
+   > 230210_HSGA.Exome.cito_7539.read2.fastq.bz2
+   
+   > 230210_hsga_exome_cito_7539_annotate_germline_all_variants.vcf.gz
+   
 Дождемся пока файлы загрузятся и появятся в правой колонке подсвеченные зеленым фоном.
 
 
