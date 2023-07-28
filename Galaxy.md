@@ -181,11 +181,6 @@ Sometimes during courses, data upload gets a little slow. You can also import da
 1) Import history from: `example input history`
 2) Rename `galaxy-pencil` the the history to your name of choice.
 
-*What is this file?* 
-
-### > Hands-on: View the dataset content
-1) Click on the galaxy-eye `(eye) icon`  next to the dataset name, to look at the file content
-
 # Загрузка данных в Galaxy
 ### > Практическое занятие: загрузка файла по URL-адресу
 1) В верхней части панели инструментов (слева) нажмите galaxy-upload `Загрузить`
@@ -207,6 +202,78 @@ Sometimes during courses, data upload gets a little slow. You can also import da
 1) Импортировать историю из: `пример истории ввода`
 2) Переименуйте `galaxy-pencil` историю на свое имя.
 
+*What is this file?* 
+
+### > Hands-on: View the dataset content
+1) Click on the galaxy-eye `(eye) icon`  next to the dataset name, to look at the file content
+
+The contents of the file will be displayed in the central Galaxy panel.
+
+This file contains DNA sequencing reads from a bacteria, in FASTQ format:
+
+```
+@mutant-no_snps.gff-24960/1
+AATGTTGTCACTTGGATTCAAATGACATTTTAAATCTAA
++
+5??A9?BBBDDDBEDDBFF+FGHHIIHHHEIHIIHIIAH
+```
+
+***Figure 1***: A FastQ file of course has four lines per record: 
+- the record identifier (`@mutant-no_snps.gff-24960/`),
+- the sequence (`AATG…`),
+- the plus character (`+`),
+- and then the quality scores for the sequence (`5??A…`).
+
+
 *Что это за файл?*
 ### > Практическое занятие: просмотр содержимого набора данных
 1) Нажмите на значок `Galaxy глаза (глаза)` рядом с именем набора данных, чтобы просмотреть содержимое файла.
+
+Содержимое файла отобразится на центральной панели Galaxy.
+
+Этот файл содержит данные секвенирования ДНК бактерии в формате FASTQ:
+```
+@mutant-no_snps.gff-24960/1
+AATGTTGTCACTTGGATTCAAATGACATTTTAAATCTAA
++
+5??A9?BBBDDDBEDDBFF+FGHHIIHHHEIHIIHIIAH
+```
+***Рисунок 1***: Файл FastQ, конечно, имеет четыре строки на запись:
+- идентификатор записи (`@mutant-no_snps.gff-24960/`),
+- последовательность (`AATG…`),
+- знак плюса (`+`),
+- а затем оценки качества последовательности (`5??A…`).
+
+# Use a tool
+
+Let’s look at the quality of the reads in this file.
+### > Hands-on: Use a tool
+1) Type FastQC in the `tools panel` search box (top)  `FastQC Read Quality reports` (Galaxy Version 0.73+galaxy0)
+2) Click on the `FastQC Tool`: toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.73+galaxy0 tool
+
+The tool will be displayed in the central Galaxy panel.
+
+3) Select the following parameters:
+- param-file “Raw read data from your current history”: the FASTQ dataset that we uploaded
+- No change in the other parameters
+
+4) Click Execute `Run Tool`
+
+This tool will run and two new output datasets will appear at the top of your history panel.
+
+
+# Используйте инструмент `Tools`
+Давайте посмотрим на качество чтения в этом файле.
+### > Практика: использование инструмента 'tools'
+1) Введите `FastQC` в поле поиска «панель инструментов» (вверху) `«FastQC Read Quality Reports»` (версия Galaxy 0.73+galaxy0)
+2) Нажмите «Инструмент FastQC»: toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.73+galaxy0
+
+Инструмент отобразится на центральной панели Galaxy.
+
+3) Выберите следующие параметры:
+- param-file «Необработанные данные чтения из вашей текущей истории»: набор данных FASTQ, который мы загрузили
+- без изменений других параметров
+
+4) Нажмите «Выполнить» `Run Tool`.
+
+Этот инструмент запустится, и в верхней части панели истории появятся два новых выходных набора данных.
