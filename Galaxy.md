@@ -277,3 +277,221 @@ This tool will run and two new output datasets will appear at the top of your hi
 4) Нажмите «Выполнить» `Run Tool`.
 
 Этот инструмент запустится, и в верхней части панели истории появятся два новых выходных набора данных.
+
+# View results
+We will now look at the output dataset called `FastQC on data 1: Webpage`.
+
+`Comment:` 
+- Note that Galaxy has given this dataset a name according to both the tool name (“FastQC”) and the input (“data 1”) that it used.
+- The name “data 1” means the dataset number 1 in Galaxy’s current history (our FASTQ file).
+
+### > Hands-on: View results
+- Once it’s green, click on the galaxy-eye `(eye) icon` next to the “Webpage” output dataset.
+- The information is displayed in the central panel
+
+This tool has summarised information about all of the reads in our FASTQ file.
+
+`Question:`
+- What was the length of the reads in the input FASTQ file?
+- Do these reads have higher quality scores in the centre or at the ends?
+  
+`Solution:`
+- 150 bp
+- In the center
+
+# Посмотреть Результаты
+Теперь мы рассмотрим выходной набор данных под названием «FastQC для данных 1: веб-страница».
+
+`Комментарий:`
+- Обратите внимание, что Galaxy дала этому набору данных имя в соответствии с именем инструмента («FastQC») и входными данными («данные 1»), которые он использовал.
+- Название «данные 1» означает набор данных номер 1 в текущей истории Galaxy (наш файл FASTQ).
+
+### > Практика: просмотр результатов
+- Как только обработанный инструментом файл станет зеленым, щелкните значок глаза галактики (глаз) рядом с выходным набором данных «Веб-страница».
+- Информация отображается на центральной панели
+
+Этот инструмент обобщил информацию обо всех чтениях в нашем файле FASTQ.
+
+`Вопрос:`
+- Какова была длина операций чтения во входном файле FASTQ?
+- Эти чтения имеют более высокие показатели качества в центре или на концах?
+  
+`Решение:`
+- 150 б.п.  Sequence length	150
+- В центре
+
+# FastQC
+### FastQC Report
+- Basic Statistics
+- Per base sequence quality
+- Per sequence quality scores
+- Per base sequence content
+- Per sequence GC content
+- Per base N content
+- Sequence Length Distribution
+- Sequence Duplication Levels
+- Overrepresented sequences
+- Adapter Content
+
+- Базовая статистика
+- Качество базовой последовательности
+- Показатели качества последовательности
+- Содержимое базовой последовательности
+- Содержимое GC для каждой последовательности
+- В пересчете на базовое содержание азота
+- Распределение длины последовательности
+- Уровни дублирования последовательности
+- Перепредставленные последовательности
+- Содержимое адаптера
+
+# Run another tool
+Let’s run a tool to filter out lower-quality reads from our FASTQ file.
+### > Hands-on: Run another tool
+1) Type Filter by quality in the tools panel search box (top)
+2) Click on the tool Filter by quality Tool:
+`toolshed.g2.bx.psu.edu/repos/devteam/fastq_quality_filter/cshl_fastq_quality_filter/1.0.2+galaxy0`
+3) Set the following parameters:
+   - param-file “Input FASTQ file”: our initial FASTQ dataset
+   - “Quality cut-off value”: 35
+   - “Percent of bases in sequence that must have quality equal to / higher than cut-off value”: 80
+
+4) Click Execute 'Run Tool'
+
+After the tool has run, its output dataset will appear at the top of your History panel.
+
+- This dataset will be called “Filter by quality on data 1”.
+- Remember that Galaxy has named this file according to the tool it used (“Filter by quality”) and the input dataset (“data 1”).
+- The actual numbers in front of the datasets in the history are not important.
+
+### What are the results from this filtering tool?
+
+We could click on the `eye icon` to view the contents of this output file, but it will not be very informative - we will just see a list of reads.
+
+### > Hands-on: Get metadata about a file
+1) Click on the output dataset name in the History panel.
+This expands the information about the file.
+
+```
+3.4 MB
+format fastqsanger database ?
+Quality cut-off: 35
+Minimum percentage: 80
+Input: 12480 reads.
+Output: 10694 reads.
+discarded 1786 (14%) low-quality reads.
+```
+`Question:` How many read has been discarded?
+`Solution:` 1786 low-quality reads were discarded
+
+#### Filter by quality (Galaxy Version 1.0.2+galaxy0)
+Tool Parameters
+- Input FASTQ file *
+- Quality cut-off value *
+- Percent of bases in sequence that must have quality equal to / higher than cut-off value *
+
+# Запустить другой инструмент
+Давайте запустим инструмент для фильтрации некачественных чтений из нашего файла FASTQ.
+### > Практика: запуск другого инструмента `Filter by quality`
+1) Введите Фильтр по качеству в поле поиска панели инструментов (вверху) `Filter by quality`
+2) Нажмите на инструмент Фильтр по качеству Инструмент:
+`toolshed.g2.bx.psu.edu/repos/devteam/fastq_quality_filter/cshl_fastq_quality_filter/1.0.2+galaxy0`
+3) Установите следующие параметры:
+   - param-file «Input FASTQ file»: наш исходный набор данных FASTQ
+   - «Пороговое значение качества»: 35
+   - «Процент баз в последовательности, качество которых должно быть равно/выше порогового значения»: 80
+
+4) Нажмите «Выполнить» 'Run Tool'.
+
+После запуска инструмента его выходной набор данных появится в верхней части панели «История».
+
+- Этот набор данных будет называться «Фильтр по качеству данных 1».
+- Помните, что Galaxy назвал этот файл в соответствии с используемым инструментом («Фильтровать по качеству») и входным набором данных («данные 1»).
+- Фактические числа перед наборами данных в истории не важны.
+
+### Каковы результаты этого инструмента фильтрации?
+
+Мы могли бы щелкнуть по значку глаза, чтобы просмотреть содержимое этого выходного файла, но это будет не очень информативно — мы просто увидим список прочтений.
+
+### > Практическое занятие: получение метаданных о файле
+1) Щелкните имя выходного набора данных на панели «История».
+Это расширяет информацию о файле:
+```
+3.4 MB
+format fastqsanger database ?
+Quality cut-off: 35
+Minimum percentage: 80
+Input: 12480 reads.
+Output: 10694 reads.
+discarded 1786 (14%) low-quality reads.
+```
+#### Фильтр по качеству (Galaxy Version 1.0.2+galaxy0)
+Параметры инструмента
+- Введите файл FASTQ *
+- пороговое значение качества *
+- Процент баз в последовательности, качество которых должно быть равно или выше порогового значения *
+
+# Re-run that tool with changed settings
+We can now try to filter our input reads to an even higher standard, and see how this changes the resulting output (an exploratory analysis). We will change the filter settings and re-run the tool.
+
+### > Hands-on: Re-run the tool
+1) Click on the `galaxy-refresh icon` (Run this job again) for the output dataset of Filter by quality tool
+
+This brings up the tool interface in the central panel with the parameters set to the values used previously to generate this dataset.
+
+2) Change the settings to something even stricter
+
+For example, you might decide you want 80 percent of bases to have a quality of 36 or higher, instead of 35.
+
+3) Click Execute `Run Tool`
+4) View the results: Click on the output dataset name to expand the information
+
+```
+963 sequences
+format fastqsanger database ?
+Quality cut-off: 36
+Minimum percentage: 80
+Input: 12480 reads.
+Output: 963 reads.
+discarded 11517 (92%) low-quality reads.
+```
+
+`Comment:` Not the galaxy-eye (eye) icon.
+
+`Question:` How many reads were discarded under these new filtering conditions?
+
+`solution:` If you selected 80% of bases with 36 as quality cut-off, then 11517 reads (92%) should have been discarded, which indicates that we have gone too far with the filtering in this case.
+
+You can re-run a tool many times with different settings. Each time you re-run the tool, its new output datasets will appear at the top of your current history.
+
+# Перезапуск инструмента с измененными настройками
+Теперь мы можем попытаться отфильтровать наши входные чтения в соответствии с еще более высоким стандартом и посмотреть, как это изменит результирующий вывод (исследовательский анализ). Мы изменим настройки фильтра и перезапустим инструмент.
+
+### > Практика: повторно запустите инструмент
+1) Щелкните значок «обновить galaxy» (запустите это задание еще раз) для выходного набора данных инструмента «Фильтровать по качеству».
+
+Это вызывает интерфейс инструмента на центральной панели с параметрами, установленными на значения, которые использовались ранее для создания этого набора данных.
+
+2) Изменить настройки на что-то еще более строгое
+
+Например, вы можете решить, что хотите, чтобы 80 процентов баз имели качество 36 или выше, а не 35.
+
+3) Нажмите «Выполнить» «Выполнить инструмент».
+4) Просмотрите результаты: щелкните имя выходного набора данных, чтобы развернуть информацию.
+
+```
+963 последовательности
+отформатировать базу данных fastqsanger?
+Порог качества: 36
+Минимальный процент: 80
+Ввод: 12480 чтений.
+Вывод: 963 чтения.
+отброшено 11517 (92%) некачественных чтений.
+```
+
+`Комментарий:` Не значок галактического глаза (глаза).
+
+`Вопрос:` Сколько чтений было отброшено при этих новых условиях фильтрации?
+
+`решение:` Если вы выбрали 80% оснований с 36 в качестве отсечки качества, то 11517 чтений (92%) должны были быть отброшены, что указывает на то, что в данном случае мы зашли слишком далеко с фильтрацией.
+
+Вы можете повторно запускать инструмент много раз с разными настройками. Каждый раз, когда вы повторно запускаете инструмент, его новые наборы выходных данных будут появляться вверху вашей текущей истории.
