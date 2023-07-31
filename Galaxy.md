@@ -117,7 +117,7 @@ The first time you use Galaxy, there will be no files in your history panel.
 - `Tools`  Левая панель - `инструменты`
 - `Viewing`  Центральная панель - `представления`
 - `History of analysis`  Правая панель - `История анализа`
-- 
+ 
 При первом использовании Galaxy на панели истории не будет файлов.
 
 # Key Galaxy actions
@@ -495,3 +495,71 @@ You can re-run a tool many times with different settings. Each time you re-run t
 `решение:` Если вы выбрали 80% оснований с 36 в качестве отсечки качества, то 11517 чтений (92%) должны были быть отброшены, что указывает на то, что в данном случае мы зашли слишком далеко с фильтрацией.
 
 Вы можете повторно запускать инструмент много раз с разными настройками. Каждый раз, когда вы повторно запускаете инструмент, его новые наборы выходных данных будут появляться вверху вашей текущей истории.
+
+# Share your history
+
+Finally, let’s imagine that you had a problem in your analysis and you want to ask for help. The easiest way to ask for help is to share your history. Try and create a link for your history and share it with…yourself!
+
+Sharing your history allows others to import and access the datasets, parameters, and steps of your history.
+
+1.) Share via link
+- Open the `History Options` galaxy-gear menu (gear icon) at the top of your history panel and select `Share or Publish`
+
+> galaxy-toggle `Make History accessible`
+
+> A `Share Link` will appear that you `give to others`
+
+- Anybody who has this link can view and copy your history
+
+2.) Publish your history
+
+- galaxy-toggle Make History publicly available in Published Histories
+- Anybody on this Galaxy server will see your history listed under the Shared Data menu
+  
+3.) Share only with another user.
+
+- Click the `Share with a user` button at the bottom
+- Enter an email address for the user you want to share with
+- Your history will be shared only with this user.
+  
+4.) Finding histories others have shared with me
+
+- Click on `User` menu on the top bar
+- Select `Histories shared with me`
+- Here you will see all the histories others have shared with you directly
+
+`Note:` If you want to make changes to your history without affecting the shared version, make a copy by going to galaxy-gear History options icon in your history and clicking Copy
+
+# Поделитесь своей историей
+
+Наконец, давайте представим, что у вас возникла проблема с анализом, и вы хотите попросить о помощи. Самый простой способ попросить о помощи — поделиться своей историей. Попробуйте создать ссылку на свою историю и поделиться ею с… собой!
+
+Совместное использование вашей истории позволяет другим импортировать и получать доступ к наборам данных, параметрам и шагам вашей истории.
+
+1.) Поделиться по ссылке
+- Откройте меню галактики «Параметры истории» (значок шестеренки) в верхней части панели истории и выберите «Поделиться или опубликовать».
+
+> galaxy-toggle `Сделать историю доступной`
+
+> Появится ссылка «Поделиться», которую вы «даете другим»
+
+- Любой, у кого есть эта ссылка, может просматривать и копировать вашу историю
+
+2.) Опубликовать свою историю
+
+- galaxy-toggle Сделать историю общедоступной в Опубликованных историях
+- Любой на этом сервере Galaxy увидит вашу историю, указанную в меню «Общие данные».
+  
+3.) Поделиться только с другим пользователем.
+
+- Нажмите кнопку «Поделиться с пользователем» внизу.
+- Введите адрес электронной почты пользователя, с которым вы хотите поделиться
+- Ваша история будет доступна только этому пользователю.
+  
+4.) Поиск историй, которыми другие поделились со мной
+
+- Нажмите на меню «Пользователь» на верхней панели.
+- Выберите «Истории, которыми мне поделились».
+- Здесь вы увидите все истории, которыми другие поделились с вами напрямую
+
+`Примечание:` Если вы хотите внести изменения в свою историю, не затрагивая общую версию, сделайте копию, перейдя к значку параметров истории galaxy-gear в своей истории и нажав «Копировать».
