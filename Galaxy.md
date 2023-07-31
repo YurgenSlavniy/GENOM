@@ -636,15 +636,15 @@ If `+` the new-history is missing:
 
 2.) Rename your history, e.g. “Next Analysis”
 
-1.) Click on `galaxy-pencil (Edit)` next to the history name (which by default is “Unnamed history”)
-2.) Type the new name
-3.) Click on `Save`
+- Click on `galaxy-pencil (Edit)` next to the history name (which by default is “Unnamed history”)
+- Type the new name
+- Click on `Save`
 
 If you do not have the `galaxy-pencil (Edit)` next to the history name:
 
-1.) Click on `Unnamed history `(or the current name of the history) (Click to rename history) at the top of your history panel
-2.) Type the new name
-3.) Press `Enter`
+1) Click on `Unnamed history `(or the current name of the history) (Click to rename history) at the top of your history panel
+2) Type the new name
+3) Press `Enter`
 
 This new history does not have any datasets in it yet.
 
@@ -664,12 +664,60 @@ This new history does not have any datasets in it yet.
 
 2.) Переименуйте свою историю, например. «Следующий анализ»
 
-1.) Нажмите «галактика-карандаш (Редактировать)» рядом с названием истории (которое по умолчанию «Безымянная история»)
-2.) Введите новое имя
-3.) Нажмите «Сохранить».
+- Нажмите «галактика-карандаш (Редактировать)» рядом с названием истории (которое по умолчанию «Безымянная история»)
+- Введите новое имя
+- Нажмите «Сохранить».
 
 Если у вас нет «галактики-карандаша (редактировать)» рядом с названием истории:
 
-1.) Нажмите «Безымянная история» (или текущее название истории) (Нажмите, чтобы переименовать историю) в верхней части панели истории.
-2.) Введите новое имя
-3.) Нажмите «Ввод».
+1) Нажмите «Безымянная история» (или текущее название истории) (Нажмите, чтобы переименовать историю) в верхней части панели истории.
+2) Введите новое имя
+3) Нажмите «Ввод».
+
+В этой новой истории еще нет наборов данных.
+
+# Look at all your histories
+
+Where is your first history, called “My Analysis”?
+
+`Hands-on:` View histories
+
+1) Click on `galaxy-history-options` (History options) and then click on the `galaxy-columns Show Histories side-by-side`
+
+A new page will appear with all your histories displayed here.
+
+2) Copy a dataset into your new history
+
+- Click on the FASTQ dataset in “My Analysis” history
+- Drag it into the “Next Analysis” history
+        
+This makes a copy of the dataset in the new history (without actually using additional disk space).
+
+3) Click on the `Home icon` galaxy-home (or Analyze Data on older versions of Galaxy) in the top panel to go back to your analysis window
+
+Your main Galaxy window will now show “Next Analysis” as the current history, and it will have one dataset in it.
+
+At any time, you can go back into the “View all histories” page and “Switch to” a different history.
+
+# Посмотрите на все свои истории
+
+Где находится ваша первая история под названием «Мой анализ»?
+
+`Практика:` Просмотр истории
+
+1) Нажмите на galaxy-history-options (Параметры истории), а затем нажмите на столбцы галактик Показать истории бок о бок
+
+Появится новая страница со всеми вашими историями, отображаемыми здесь.
+
+2) Скопируйте набор данных в новую историю
+
+- Нажмите на набор данных FASTQ в истории «Мой анализ».
+- Перетащите его в историю «Следующий анализ»
+        
+Это создает копию набора данных в новой истории (фактически без использования дополнительного дискового пространства).
+
+3) Нажмите значок «Главная» galaxy-home (или «Анализ данных» в более старых версиях Galaxy) на верхней панели, чтобы вернуться в окно анализа.
+
+Ваше главное окно Galaxy теперь будет отображать «Следующий анализ» как текущую историю, и в нем будет один набор данных.
+
+В любой момент вы можете вернуться на страницу «Просмотреть все истории» и «Переключиться» на другую историю.
