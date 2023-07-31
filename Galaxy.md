@@ -563,3 +563,113 @@ Sharing your history allows others to import and access the datasets, parameters
 - Здесь вы увидите все истории, которыми другие поделились с вами напрямую
 
 `Примечание:` Если вы хотите внести изменения в свою историю, не затрагивая общую версию, сделайте копию, перейдя к значку параметров истории galaxy-gear в своей истории и нажав «Копировать».
+
+# Convert your analysis history into a workflow
+
+When you look carefully at your history, you can see that it contains all the steps of our analysis, from the beginning (at the bottom) to the end (on top). The history in Galaxy records details of every tool you run and preserves all parameter settings applied at each step. But when you need to analyze new data, it would be tedious to do each step one-by-one again. Wouldn’t it be nice to just convert this history into a workflow that we will be able to execute again and again?
+
+Galaxy makes this very easy with the Extract workflow option. This means any time you want to build a workflow, you can just perform the steps once manually, and then convert it to a workflow, so that next time it will be a lot less work to do the same analysis.
+
+`Hands-on:` Extract workflow
+
+ 1.) `Clean up` your history: remove any failed (red) jobs from your history by clicking on the galaxy-delete button.
+
+ This will make the creation of the workflow easier.
+
+ 2.) Click on `galaxy-history-options` (History options) at the top of your history panel and select Extract workflow.
+
+The central panel will show the content of the history in reverse order (oldest on top), and you will be able to choose which steps to include in the workflow.
+
+3.) Replace the `Workflow name` to something more descriptive, for example: `QC and filtering.`
+
+4.) `Rename` the workflow input in the box at the top of second column to: `FASTQ reads`
+
+5.) If there are any steps that shouldn’t be included in the workflow, you can `uncheck` them in the first column of boxes. In this case, uncheck the second `Filter by quality` tool at the bottom, where we used a too high quality cut-off.
+
+6.) Click on the Create Workflow button near the top.
+
+You will get a message that the workflow was created.
+
+In a minute we will see how to find the extracted workflow and how to use it.
+
+# Превратите историю анализа в рабочий процесс
+
+Если вы внимательно посмотрите на свою историю, то увидите, что она содержит все этапы нашего анализа, от начала (внизу) до конца (вверху). История в Galaxy записывает сведения о каждом запущенном вами инструменте и сохраняет все настройки параметров, применяемые на каждом этапе. Но когда вам нужно проанализировать новые данные, было бы утомительно повторять каждый шаг один за другим. Было бы неплохо просто преобразовать эту историю в рабочий процесс, который мы сможем выполнять снова и снова?
+
+Galaxy делает это очень легко с опцией рабочего процесса Extract. Это означает, что каждый раз, когда вы хотите создать рабочий процесс, вы можете просто выполнить шаги один раз вручную, а затем преобразовать его в рабочий процесс, чтобы в следующий раз выполнить тот же анализ было намного меньше работы.
+
+`Практика:` Рабочий процесс извлечения
+
+ 1.) «Очистите» свою историю: удалите все неудачные (красные) задания из своей истории, нажав на кнопку галактики-удалить.
+
+ Это облегчит создание рабочего процесса.
+
+ 2.) Нажмите «galaxy-history-options» (Параметры истории) в верхней части панели истории и выберите «Извлечь рабочий процесс».
+
+На центральной панели содержимое истории будет отображаться в обратном порядке (самые старые вверху), и вы сможете выбрать, какие шаги включить в рабочий процесс.
+
+3.) Замените «Имя рабочего процесса» на что-то более описательное, например: «Контроль качества и фильтрация».
+
+4.) «Переименуйте» ввод рабочего процесса в поле в верхней части второго столбца на: «FASTQ читает».
+
+5.) Если есть какие-либо шаги, которые не должны быть включены в рабочий процесс, вы можете «снять» их в первом столбце полей. В этом случае снимите второй флажок «Фильтровать по качеству» внизу, где мы использовали слишком высокое качество отсечки.
+
+6.) Нажмите кнопку «Создать рабочий процесс» вверху.
+
+Вы получите сообщение о том, что рабочий процесс создан.
+
+Через минуту мы увидим, как найти извлеченный рабочий процесс и как его использовать.
+
+# Create a new history
+
+Let’s create a new history.
+
+`Hands-on:` New history
+
+1.) Create a new history
+- Click `+` the `new-history icon` at the top of the history panel.
+
+If `+` the new-history is missing:
+
+- Click on the `galaxy-gear icon` (History options) on the top of the history panel
+- Select the option `Create New`  from the menu
+
+2.) Rename your history, e.g. “Next Analysis”
+
+1.) Click on `galaxy-pencil (Edit)` next to the history name (which by default is “Unnamed history”)
+2.) Type the new name
+3.) Click on `Save`
+
+If you do not have the `galaxy-pencil (Edit)` next to the history name:
+
+1.) Click on `Unnamed history `(or the current name of the history) (Click to rename history) at the top of your history panel
+2.) Type the new name
+3.) Press `Enter`
+
+This new history does not have any datasets in it yet.
+
+# Создать новую историю
+
+Создадим новую историю.
+
+`Практика:` Новая история
+
+1.) Создать новую историю
+- Нажмите «+» на «значке новой истории» в верхней части панели истории.
+
+Если `+` новая история отсутствует:
+
+- Нажмите на значок «галактика-шестеренка» (параметры истории) в верхней части панели истории.
+- Выберите в меню пункт «Создать новый».
+
+2.) Переименуйте свою историю, например. «Следующий анализ»
+
+1.) Нажмите «галактика-карандаш (Редактировать)» рядом с названием истории (которое по умолчанию «Безымянная история»)
+2.) Введите новое имя
+3.) Нажмите «Сохранить».
+
+Если у вас нет «галактики-карандаша (редактировать)» рядом с названием истории:
+
+1.) Нажмите «Безымянная история» (или текущее название истории) (Нажмите, чтобы переименовать историю) в верхней части панели истории.
+2.) Введите новое имя
+3.) Нажмите «Ввод».
