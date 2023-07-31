@@ -721,3 +721,174 @@ At any time, you can go back into the “View all histories” page and “Switc
 Ваше главное окно Galaxy теперь будет отображать «Следующий анализ» как текущую историю, и в нем будет один набор данных.
 
 В любой момент вы можете вернуться на страницу «Просмотреть все истории» и «Переключиться» на другую историю.
+
+# Run workflow in the new history
+
+Now that we have built our workflow, let’s use it to re-create our small analysis in a single step. The same workflow could also be used on some new FASTQ data to quickly repeat the same analysis on different inputs.
+
+`Hands-on:` Run workflow
+
+1) Click on `Workflow` in the top menu bar of Galaxy.
+
+Here you have a list of all your workflows. Your newly created workflow should be listed at the top:
+
+If you click on a workflow name, you can see all available actions for the workflow, e.g. edit, copy, rename, delete.
+
+2) Click on the `workflow-run` (Run workflow) button next to your workflow.
+
+The central panel will change to allow you to configure and launch the workflow.
+
+3) Check that the “FASTQ reads” input is set to the FASTQ dataset we have copied to the new history.
+
+In this page we could change any parameter for the tools composing the workflow as we would do when running them one by one.
+
+4) Click the `Run Workflow` button at the top-right of the screen.
+
+You should see a message that the workflow was successfully invoked. Then jobs will start to run and datasets appear in your “Next Analysis” history, replicating the steps of your previous history.
+
+### Conclusion
+
+Well done! You have completed the short introduction to Galaxy, 
+
+- where you named the history,
+- uploaded a file,
+- used a tool,
+- viewed results and
+- run a workflow.
+
+Additional tutorials are available for a more in-depth introduction to Galaxy’s features.
+
+# Запустить рабочий процесс в новой истории
+
+Теперь, когда мы построили наш рабочий процесс, давайте воспользуемся им, чтобы воссоздать наш небольшой анализ за один шаг. Тот же рабочий процесс можно также использовать для некоторых новых данных FASTQ, чтобы быстро повторить тот же анализ для разных входных данных.
+
+`Практика:` Запуск рабочего процесса
+
+1) Нажмите «Рабочий процесс» в верхней строке меню Galaxy.
+
+Здесь у вас есть список всех ваших рабочих процессов. Ваш вновь созданный рабочий процесс должен быть указан вверху:
+
+Если вы нажмете имя рабочего процесса, вы увидите все доступные действия для рабочего процесса, например. редактировать, копировать, переименовывать, удалять.
+
+2) Нажмите на кнопку `workflow-run` (Запустить рабочий процесс) рядом с вашим рабочим процессом.
+
+Центральная панель изменится, чтобы вы могли настроить и запустить рабочий процесс.
+
+3) Убедитесь, что вход «Чтения FASTQ» настроен на набор данных FASTQ, который мы скопировали в новую историю.
+
+На этой странице мы могли изменить любой параметр для инструментов, составляющих рабочий процесс, как если бы мы запускали их один за другим.
+
+4) Нажмите кнопку «Запустить рабочий процесс» в правом верхнем углу экрана.
+
+Вы должны увидеть сообщение об успешном вызове рабочего процесса. Затем начнут выполняться задания, и наборы данных появятся в вашей истории «Следующий анализ», повторяя шаги вашей предыдущей истории.
+
+### Заключение
+
+Отличная работа! Вы завершили краткое введение в Galaxy, 
+- где назвали историю,
+- загрузили файл,
+- использовали инструмент,
+- просмотрели результаты и
+- запустили рабочий процесс.
+  
+Доступны дополнительные руководства для более глубокого ознакомления с функциями Galaxy.
+
+# Key Points:
+
+- The Galaxy interface has tools on the left, viewing pane in the middle, and a history of your data analysis on the right.
+- You can create a new history for each analysis. All your histories are saved.
+- To get data into Galaxy, you can upload a file by pasting in a web address. There are other ways to get data into Galaxy (not covered in this tutorial): you can upload a file from your computer, and you can import an entire history.
+- Choose a tool and change any settings for your analysis.
+- Run the tool. The output files will be saved at the top of your history.
+- View the output files by clicking on the eye icon.
+- View all your histories and move files between them. Switch to a different history.
+- Log out of your Galaxy server. When you log back in (to the same server), your histories will all be there.
+
+### Frequently Asked Questions
+Have questions about this tutorial? Check out the tutorial FAQ page or the FAQ page for the Introduction to Galaxy Analyses topic to see if your question is listed there. If not, please ask your question on the GTN Gitter Channel or the Galaxy Help Forum
+
+### Feedback
+Did you use this material as an instructor? Feel free to give us feedback on how it went.
+Did you use this material as a learner or student? Click the form below to leave feedback. 
+
+# Ключевые моменты:
+
+- В интерфейсе Galaxy инструменты слева, панель просмотра посередине и история анализа ваших данных справа.
+- Вы можете создать новую историю для каждого анализа. Все ваши истории сохранены.
+- Чтобы получить данные в Galaxy, вы можете загрузить файл, вставив веб-адрес. Есть и другие способы загрузки данных в Galaxy (не рассмотренные в этом руководстве): вы можете загрузить файл со своего компьютера или импортировать всю историю.
+- Выберите инструмент и измените любые настройки для вашего анализа.
+- Запустите инструмент. Выходные файлы будут сохранены в верхней части вашей истории.
+- Просмотрите выходные файлы, нажав на значок глаза.
+- Просматривайте все свои истории и перемещайте файлы между ними. Переключиться на другую историю.
+- Выйдите из своего сервера Galaxy. Когда вы снова войдете в систему (на тот же сервер), все ваши истории будут там.
+
+### Часто задаваемые вопросы
+Есть вопросы по этому уроку? Посетите страницу часто задаваемых вопросов по учебнику или страницу часто задаваемых вопросов для темы Introduction to Galaxy Analyses, чтобы узнать, есть ли там ваш вопрос. Если нет, задайте свой вопрос на канале GTN Gitter или на справочном форуме Galaxy.
+
+### Обратная связь
+Вы использовали этот материал в качестве преподавателя? Не стесняйтесь оставлять нам отзывы о том, как все прошло.
+Вы использовали этот материал в качестве ученика или ученика? Нажмите на форму ниже, чтобы оставить отзыв.
+
+
+# BibTeX
+```
+@misc{introduction-galaxy-intro-short,
+author = "Anna Syme and Nicola Soranzo",
+	title = "A short introduction to Galaxy (Galaxy Training Materials)",
+	year = "",
+	month = "",
+	day = ""
+	url = "\url{https://training.galaxyproject.org/training-material/topics/introduction/tutorials/galaxy-intro-short/tutorial.html}",
+	note = "[Online; accessed Mon Jul 31 2023]"
+}
+@article{Hiltemann_2023,
+	doi = {10.1371/journal.pcbi.1010752},
+	url = {https://doi.org/10.1371%2Fjournal.pcbi.1010752},
+	year = 2023,
+	month = {jan},
+	publisher = {Public Library of Science ({PLoS})},
+	volume = {19},
+	number = {1},
+	pages = {e1010752},
+	author = {Saskia Hiltemann and Helena Rasche and Simon Gladman and Hans-Rudolf Hotz and Delphine Larivi{\`{e}}re and Daniel Blankenberg and Pratik D. Jagtap and Thomas Wollmann and Anthony Bretaudeau and Nadia Gou{\'{e}} and Timothy J. Griffin and Coline Royaux and Yvan Le Bras and Subina Mehta and Anna Syme and Frederik Coppens and Bert Droesbeke and Nicola Soranzo and Wendi Bacon and Fotis Psomopoulos and Crist{\'{o}}bal Gallardo-Alba and John Davis and Melanie Christine Föll and Matthias Fahrner and Maria A. Doyle and Beatriz Serrano-Solano and Anne Claire Fouilloux and Peter van Heusden and Wolfgang Maier and Dave Clements and Florian Heyl and Björn Grüning and B{\'{e}}r{\'{e}}nice Batut and},
+	editor = {Francis Ouellette},
+	title = {Galaxy Training: A powerful framework for teaching!},
+	journal = {PLoS Comput Biol} Computational Biology}
+}
+
+```
+
+### Galaxy Administrators: Install the missing tools
+
+You can use Ephemeris's `shed-tools install` command to install the tools used in this tutorial.
+
+> shed-tools install [-g GALAXY] [-a API_KEY] -t <(curl https://training.galaxyproject.org/training-material/api/topics/introduction/tutorials/galaxy-intro-short/tutorial.json | jq .admin_install_yaml -r)
+
+Alternatively you can copy and paste the following YAML
+```
+---
+install_tool_dependencies: true
+install_repository_dependencies: true
+install_resolver_dependencies: true
+tools:
+- name: fastq_quality_filter
+  owner: devteam
+  revisions: 43a7370aa010
+  tool_panel_section_label: Introduction to Galaxy Analyses
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: fastq_quality_filter
+  owner: devteam
+  revisions: ce9cd02d5b88
+  tool_panel_section_label: Introduction to Galaxy Analyses
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: fastqc
+  owner: devteam
+  revisions: 9da02be9c6cc
+  tool_panel_section_label: Introduction to Galaxy Analyses
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: fastqc
+  owner: devteam
+  revisions: 3d0c7bdf12f5
+  tool_panel_section_label: Introduction to Galaxy Analyses
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+```
