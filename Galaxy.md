@@ -8,7 +8,7 @@ We recommend you follow the tutorials in the order presented on this page. They 
 This learning path aims to teach you the basics of Galaxy and analysis of sequencing data. You will learn how to use Galaxy for analysis, and will be guided through the most common first steps of any genome analysis; quality control and a mapping or assembly of your genomic sequences.
 
 New to Galaxy and/or the field of genomics? Follow this learning path to get familiar with the basics!
-
+______________________________________________________________________
 # Обучение Galaxy!
 ### Схема обучения GTN:
 
@@ -18,15 +18,13 @@ New to Galaxy and/or the field of genomics? Follow this learning path to get fam
 
 Этот путь обучения направлен на то, чтобы научить вас основам Galaxy и анализу данных секвенирования. Вы узнаете, как использовать Galaxy для анализа, и пройдете через наиболее распространенные первые шаги любого анализа генома; контроль качества и картирование или сборка ваших геномных последовательностей.
 
-
+______________________________________________________________________
 # Module 1: Introduction to Galaxy
 Get a first look at the Galaxy platform for data analysis. We start with a short introduction (video slides & practical) to familiarize you with the Galaxy interface, and then proceed with a slightly longer introduction tutorials where you perform a first, very simple, analysis.
-### A short introduction to Galaxy
-
+______________________________________________________________________
 # МОДУЛЬ 1: Введение в Galaxy
 Получите первый взгляд на платформу Galaxy для анализа данных. Мы начнем с краткого введения (видео слайды и практические занятия), чтобы познакомить вас с интерфейсом Galaxy, а затем перейдем к более длинным вводным учебным пособиям, в которых вы выполните первый, очень простой анализ.
-
-### Короткое введение в Galaxy
+______________________________________________________________________
 
 ### Overview
 ***Questions:***
@@ -51,7 +49,7 @@ Get a first look at the Galaxy platform for data analysis. We start with a short
 ***License:*** Tutorial Content is licensed under Creative Commons Attribution 4.0 International License. The GTN Framework is licensed under MIT
 
 ***purlPURL:*** https://gxy.io/GTN:T00190 
-
+______________________________________________________________________
 # Обзор
 Это краткое введение в пользовательский интерфейс Galaxy.
 Мы рассмотрим ключевые задачи в Galaxy: 
@@ -59,11 +57,11 @@ Get a first look at the Galaxy platform for data analysis. We start with a short
 - использование инструментов,
 - просмотр истории 
 - выполнение рабочих процессов.
-
+______________________________________________________________________
 # Overview
 - This is a short introduction to the Galaxy user interface - the web page that you interact with.
 - We will cover key tasks in Galaxy: uploading files, using tools, viewing histories, and running workflows.
-
+______________________________________________________________________
 # Оглавление (Agenda):
 1) Overview
 - 1.1. What does Galaxy look like?
@@ -80,14 +78,14 @@ Get a first look at the Galaxy platform for data analysis. We start with a short
 - 2.10 Look at all your histories
 - 2.11 Run workflow in the new history
 3) Conclusion
-
+______________________________________________________________________
 # What does Galaxy look like?
 ### > Hands-on: Log in to Galaxy
 
 1) Open your favorite browser (Chrome, Safari or Firefox as your browser, not Internet Explorer!)
 2) Browse to your Galaxy instance
 3) Log in or register
-
+______________________________________________________________________
 # Как выглядит Galaxy?
 ### > Практическое занятие: войдите в Galaxy
 
@@ -103,7 +101,7 @@ Get a first look at the Galaxy platform for data analysis. We start with a short
 
 - Основной сервер Galaxy - `usegalaxy.org`.
 - Европейский сервер Galaxy - `usegalaxy.eu`.
-
+______________________________________________________________________
 # Homepage
 The Galaxy homepage is divided into three panels:
 - Tools on the left
@@ -111,7 +109,7 @@ The Galaxy homepage is divided into three panels:
 - History of analysis and files on the right
 
 The first time you use Galaxy, there will be no files in your history panel.
-
+______________________________________________________________________
 # Домашняя стартовая страница https://usegalaxy.org/
 Стартовая страница Galaxy состоит из трёх панелей:
 - `Tools`  Левая панель - `инструменты`
@@ -119,7 +117,7 @@ The first time you use Galaxy, there will be no files in your history panel.
 - `History of analysis`  Правая панель - `История анализа`
  
 При первом использовании Galaxy на панели истории не будет файлов.
-
+______________________________________________________________________
 # Key Galaxy actions
 ### Name your current history
 
@@ -137,7 +135,7 @@ Your “History” is in the panel at the right.
 `Comment:` Renaming not an option?
 
 If renaming does not work, it is possible you aren’t logged in, so try logging in to Galaxy first. Anonymous users are only permitted to have one history, and they cannot rename it.
-
+______________________________________________________________________
 
 # Ключевые действия Galaxy 
 ### Назовите свою текущую историю
@@ -156,7 +154,7 @@ If renaming does not work, it is possible you aren’t logged in, so try logging
 `Комментарий:` Переименование не вариант?
 
 Если переименование не работает, возможно, вы не вошли в систему, поэтому сначала попробуйте войти в Galaxy. Анонимным пользователям разрешено иметь только одну историю, и они не могут ее переименовывать.
-
+______________________________________________________________________
 # Upload a file
 
 Your “Tools” are in the panel at the left.
@@ -180,7 +178,7 @@ Sometimes during courses, data upload gets a little slow. You can also import da
 
 1) Import history from: `example input history`
 2) Rename `galaxy-pencil` the the history to your name of choice.
-
+______________________________________________________________________
 # Загрузка данных в Galaxy
 ### > Практическое занятие: загрузка файла по URL-адресу
 1) В верхней части панели инструментов (слева) нажмите galaxy-upload `Загрузить`
@@ -201,7 +199,7 @@ Sometimes during courses, data upload gets a little slow. You can also import da
 
 1) Импортировать историю из: `пример истории ввода`
 2) Переименуйте `galaxy-pencil` историю на свое имя.
-
+______________________________________________________________________
 *What is this file?* 
 
 ### > Hands-on: View the dataset content
@@ -224,7 +222,7 @@ AATGTTGTCACTTGGATTCAAATGACATTTTAAATCTAA
 - the plus character (`+`),
 - and then the quality scores for the sequence (`5??A…`).
 
-
+______________________________________________________________________
 *Что это за файл?*
 ### > Практическое занятие: просмотр содержимого набора данных
 1) Нажмите на значок `Galaxy глаза (глаза)` рядом с именем набора данных, чтобы просмотреть содержимое файла.
@@ -243,7 +241,7 @@ AATGTTGTCACTTGGATTCAAATGACATTTTAAATCTAA
 - последовательность (`AATG…`),
 - знак плюса (`+`),
 - а затем оценки качества последовательности (`5??A…`).
-
+______________________________________________________________________
 # Use a tool
 
 Let’s look at the quality of the reads in this file.
@@ -261,7 +259,7 @@ The tool will be displayed in the central Galaxy panel.
 
 This tool will run and two new output datasets will appear at the top of your history panel.
 
-
+______________________________________________________________________
 # Используйте инструмент `Tools`
 Давайте посмотрим на качество чтения в этом файле.
 ### > Практика: использование инструмента 'tools'
@@ -277,7 +275,7 @@ This tool will run and two new output datasets will appear at the top of your hi
 4) Нажмите «Выполнить» `Run Tool`.
 
 Этот инструмент запустится, и в верхней части панели истории появятся два новых выходных набора данных.
-
+______________________________________________________________________
 # View results
 We will now look at the output dataset called `FastQC on data 1: Webpage`.
 
@@ -298,7 +296,7 @@ This tool has summarised information about all of the reads in our FASTQ file.
 `Solution:`
 - 150 bp
 - In the center
-
+______________________________________________________________________
 # Посмотреть Результаты
 Теперь мы рассмотрим выходной набор данных под названием «FastQC для данных 1: веб-страница».
 
@@ -319,7 +317,7 @@ This tool has summarised information about all of the reads in our FASTQ file.
 `Решение:`
 - 150 б.п.  Sequence length	150
 - В центре
-
+______________________________________________________________________
 # FastQC
 ### FastQC Report
 - Basic Statistics
@@ -343,7 +341,7 @@ This tool has summarised information about all of the reads in our FASTQ file.
 - Уровни дублирования последовательности
 - Перепредставленные последовательности
 - Содержимое адаптера
-
+______________________________________________________________________
 # Run another tool
 Let’s run a tool to filter out lower-quality reads from our FASTQ file.
 ### > Hands-on: Run another tool
@@ -388,7 +386,7 @@ Tool Parameters
 - Input FASTQ file *
 - Quality cut-off value *
 - Percent of bases in sequence that must have quality equal to / higher than cut-off value *
-
+______________________________________________________________________
 # Запустить другой инструмент
 Давайте запустим инструмент для фильтрации некачественных чтений из нашего файла FASTQ.
 ### > Практика: запуск другого инструмента `Filter by quality`
@@ -429,7 +427,7 @@ discarded 1786 (14%) low-quality reads.
 - Введите файл FASTQ *
 - пороговое значение качества *
 - Процент баз в последовательности, качество которых должно быть равно или выше порогового значения *
-
+______________________________________________________________________
 # Re-run that tool with changed settings
 We can now try to filter our input reads to an even higher standard, and see how this changes the resulting output (an exploratory analysis). We will change the filter settings and re-run the tool.
 
@@ -462,7 +460,7 @@ discarded 11517 (92%) low-quality reads.
 `solution:` If you selected 80% of bases with 36 as quality cut-off, then 11517 reads (92%) should have been discarded, which indicates that we have gone too far with the filtering in this case.
 
 You can re-run a tool many times with different settings. Each time you re-run the tool, its new output datasets will appear at the top of your current history.
-
+______________________________________________________________________
 # Перезапуск инструмента с измененными настройками
 Теперь мы можем попытаться отфильтровать наши входные чтения в соответствии с еще более высоким стандартом и посмотреть, как это изменит результирующий вывод (исследовательский анализ). Мы изменим настройки фильтра и перезапустим инструмент.
 
@@ -495,7 +493,7 @@ You can re-run a tool many times with different settings. Each time you re-run t
 `решение:` Если вы выбрали 80% оснований с 36 в качестве отсечки качества, то 11517 чтений (92%) должны были быть отброшены, что указывает на то, что в данном случае мы зашли слишком далеко с фильтрацией.
 
 Вы можете повторно запускать инструмент много раз с разными настройками. Каждый раз, когда вы повторно запускаете инструмент, его новые наборы выходных данных будут появляться вверху вашей текущей истории.
-
+______________________________________________________________________
 # Share your history
 
 Finally, let’s imagine that you had a problem in your analysis and you want to ask for help. The easiest way to ask for help is to share your history. Try and create a link for your history and share it with…yourself!
@@ -529,7 +527,7 @@ Sharing your history allows others to import and access the datasets, parameters
 - Here you will see all the histories others have shared with you directly
 
 `Note:` If you want to make changes to your history without affecting the shared version, make a copy by going to galaxy-gear History options icon in your history and clicking Copy
-
+______________________________________________________________________
 # Поделитесь своей историей
 
 Наконец, давайте представим, что у вас возникла проблема с анализом, и вы хотите попросить о помощи. Самый простой способ попросить о помощи — поделиться своей историей. Попробуйте создать ссылку на свою историю и поделиться ею с… собой!
@@ -563,7 +561,7 @@ Sharing your history allows others to import and access the datasets, parameters
 - Здесь вы увидите все истории, которыми другие поделились с вами напрямую
 
 `Примечание:` Если вы хотите внести изменения в свою историю, не затрагивая общую версию, сделайте копию, перейдя к значку параметров истории galaxy-gear в своей истории и нажав «Копировать».
-
+______________________________________________________________________
 # Convert your analysis history into a workflow
 
 When you look carefully at your history, you can see that it contains all the steps of our analysis, from the beginning (at the bottom) to the end (on top). The history in Galaxy records details of every tool you run and preserves all parameter settings applied at each step. But when you need to analyze new data, it would be tedious to do each step one-by-one again. Wouldn’t it be nice to just convert this history into a workflow that we will be able to execute again and again?
@@ -591,7 +589,7 @@ The central panel will show the content of the history in reverse order (oldest 
 You will get a message that the workflow was created.
 
 In a minute we will see how to find the extracted workflow and how to use it.
-
+______________________________________________________________________
 # Превратите историю анализа в рабочий процесс
 
 Если вы внимательно посмотрите на свою историю, то увидите, что она содержит все этапы нашего анализа, от начала (внизу) до конца (вверху). История в Galaxy записывает сведения о каждом запущенном вами инструменте и сохраняет все настройки параметров, применяемые на каждом этапе. Но когда вам нужно проанализировать новые данные, было бы утомительно повторять каждый шаг один за другим. Было бы неплохо просто преобразовать эту историю в рабочий процесс, который мы сможем выполнять снова и снова?
@@ -619,7 +617,7 @@ Galaxy делает это очень легко с опцией рабочег�
 Вы получите сообщение о том, что рабочий процесс создан.
 
 Через минуту мы увидим, как найти извлеченный рабочий процесс и как его использовать.
-
+______________________________________________________________________
 # Create a new history
 
 Let’s create a new history.
@@ -647,7 +645,7 @@ If you do not have the `galaxy-pencil (Edit)` next to the history name:
 3) Press `Enter`
 
 This new history does not have any datasets in it yet.
-
+______________________________________________________________________
 # Создать новую историю
 
 Создадим новую историю.
@@ -675,7 +673,7 @@ This new history does not have any datasets in it yet.
 3) Нажмите «Ввод».
 
 В этой новой истории еще нет наборов данных.
-
+______________________________________________________________________
 # Look at all your histories
 
 Where is your first history, called “My Analysis”?
@@ -698,7 +696,7 @@ This makes a copy of the dataset in the new history (without actually using addi
 Your main Galaxy window will now show “Next Analysis” as the current history, and it will have one dataset in it.
 
 At any time, you can go back into the “View all histories” page and “Switch to” a different history.
-
+______________________________________________________________________
 # Посмотрите на все свои истории
 
 Где находится ваша первая история под названием «Мой анализ»?
@@ -721,7 +719,7 @@ At any time, you can go back into the “View all histories” page and “Switc
 Ваше главное окно Galaxy теперь будет отображать «Следующий анализ» как текущую историю, и в нем будет один набор данных.
 
 В любой момент вы можете вернуться на страницу «Просмотреть все истории» и «Переключиться» на другую историю.
-
+______________________________________________________________________
 # Run workflow in the new history
 
 Now that we have built our workflow, let’s use it to re-create our small analysis in a single step. The same workflow could also be used on some new FASTQ data to quickly repeat the same analysis on different inputs.
@@ -757,7 +755,7 @@ Well done! You have completed the short introduction to Galaxy,
 - run a workflow.
 
 Additional tutorials are available for a more in-depth introduction to Galaxy’s features.
-
+______________________________________________________________________
 # Запустить рабочий процесс в новой истории
 
 Теперь, когда мы построили наш рабочий процесс, давайте воспользуемся им, чтобы воссоздать наш небольшой анализ за один шаг. Тот же рабочий процесс можно также использовать для некоторых новых данных FASTQ, чтобы быстро повторить тот же анализ для разных входных данных.
@@ -790,7 +788,7 @@ Additional tutorials are available for a more in-depth introduction to Galaxy’
 - использовали инструмент,
 - просмотрели результаты и
 - запустили рабочий процесс.
-  
+______________________________________________________________________
 Доступны дополнительные руководства для более глубокого ознакомления с функциями Galaxy.
 
 # Key Points:
@@ -810,7 +808,7 @@ Have questions about this tutorial? Check out the tutorial FAQ page or the FAQ p
 ### Feedback
 Did you use this material as an instructor? Feel free to give us feedback on how it went.
 Did you use this material as a learner or student? Click the form below to leave feedback. 
-
+______________________________________________________________________
 # Ключевые моменты:
 
 - В интерфейсе Galaxy инструменты слева, панель просмотра посередине и история анализа ваших данных справа.
@@ -829,7 +827,7 @@ Did you use this material as a learner or student? Click the form below to leave
 Вы использовали этот материал в качестве преподавателя? Не стесняйтесь оставлять нам отзывы о том, как все прошло.
 Вы использовали этот материал в качестве ученика или ученика? Нажмите на форму ниже, чтобы оставить отзыв.
 
-
+______________________________________________________________________
 # BibTeX
 ```
 @misc{introduction-galaxy-intro-short,
@@ -857,7 +855,7 @@ author = "Anna Syme and Nicola Soranzo",
 }
 
 ```
-
+______________________________________________________________________
 ### Galaxy Administrators: Install the missing tools
 
 You can use Ephemeris's `shed-tools install` command to install the tools used in this tutorial.
@@ -892,3 +890,132 @@ tools:
   tool_panel_section_label: Introduction to Galaxy Analyses
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
 ```
+______________________________________________________________________
+# Galaxy 101
+Authors:
+- Saskia Hiltemann
+- Nicola Soranzo
+- Clemens Blank
+- Nekrutenko
+- Björn Grüning
+- Anne Pajon
+- Helena Rasche
+______________________________________________________________________
+# Overview
+
+`Questions:` Which coding exon has the highest number of single nucleotide polymorphisms (SNPs) on human chromosome 22?
+
+`Objectives:`
+
+- Familiarize yourself with the basics of Galaxy
+- Learn how to obtain data from external sources
+- Learn how to run tools
+- Learn how histories work
+- Learn how to create a workflow
+- Learn how to share your work
+
+`Time estimation:` 1 hour
+
+`Level:` Introductory Introductory - 
+
+`Supporting Materials:`
+
+- https://zenodo.org/record/4104428
+- https://usegalaxy.org/training-material/topics/introduction/tutorials/galaxy-intro-101/workflows/
+- https://usegalaxy.org/training-material/topics/introduction/tutorials/galaxy-intro-101/faqs/
+- https://usegalaxy.org/training-material/topics/introduction/tutorials/galaxy-intro-101/tutorial.html#
+- https://usegalaxy.org/training-material/topics/introduction/tutorials/galaxy-intro-101/tutorial.html#
+
+`Last modification:` May 16, 2023
+
+`License: Tutorial Content` is licensed under Creative Commons Attribution 4.0 International License. The GTN Framework is licensed under MIT 
+______________________________________________________________________
+# Обзор
+
+`Вопросы:` Какой кодирующий экзон имеет наибольшее количество однонуклеотидных полиморфизмов (SNP) на хромосоме 22 человека?
+
+`Цели:`
+
+- Ознакомьтесь с основами Galaxy
+- Научитесь получать данные из внешних источников
+- Научитесь запускать инструменты
+- Узнайте, как работают истории
+- Научитесь создавать рабочий процесс
+- Узнайте, как поделиться своей работой
+
+`Оценка времени:` 1 час
+
+`Уровень:` Вводный Вводный -
+
+`Вспомогательные материалы:`
+
+- https://zenodo.org/record/4104428
+- https://usegalaxy.org/training-material/topics/introduction/tutorials/galaxy-intro-101/workflows/
+- https://usegalaxy.org/training-material/topics/introduction/tutorials/galaxy-intro-101/faqs/
+- https://usegalaxy.org/training-material/topics/introduction/tutorials/galaxy-intro-101/tutorial.html#
+- https://usegalaxy.org/training-material/topics/introduction/tutorials/galaxy-intro-101/tutorial.html#
+
+`Последняя модификация:` 16 мая 2023 г.
+
+«Лицензия: Учебное содержание» находится под лицензией Creative Commons Attribution 4.0 International License. GTN Framework находится под лицензией MIT.
+______________________________________________________________________
+
+# Introduction
+
+This tutorial aims to familiarize you with the Galaxy user interface. It will teach you how to perform basic tasks such as importing data, running tools, working with histories, creating workflows, and sharing your work.
+
+`Comment:` Results may vary
+
+Your results may be slightly different from the ones presented in this tutorial due to differing versions of tools, reference data, external databases, or because of stochastic processes in the algorithms.
+
+______________________________________________________________________
+# Введение
+
+Это руководство предназначено для того, чтобы познакомить вас с пользовательским интерфейсом Galaxy. Он научит вас выполнять основные задачи, такие как импорт данных, запуск инструментов, работа с историями, создание рабочих процессов и совместное использование вашей работы.
+
+`Комментарий:` Результаты могут отличаться
+
+Ваши результаты могут немного отличаться от представленных в этом руководстве из-за разных версий инструментов, справочных данных, внешних баз данных или из-за стохастических процессов в алгоритмах.
+______________________________________________________________________
+# Agenda
+
+In this tutorial, we will:
+
+1) Introduction
+2) Setting the stage: Exons and SNPs
+- 2.1) Locating Exons
+3) Analysis
+- 3.1) Find exons with the most SNPs
+- 3.2) Count the number of SNPs per exon
+- 3.3) Sort the exons by SNPs count
+- 3.4) Select the top five exons
+- 3.5) Recovering exon info
+- 3.6) Displaying data in UCSC genome browser
+4) Galaxy management
+- 4.1) Convert your analysis history into a workflow
+- 4.2) The workflow editor
+- 4.3) Run workflow on different data
+- 4.4) Share your work
+5) Conclusion
+______________________________________________________________________
+# Повестка дня
+
+В этом уроке мы будем:
+
+1. Введение
+2) Подготовка к сцене: экзоны и SNP
+- 2.1) Расположение экзонов
+3) Анализ
+- 3.1) Найдите экзоны с наибольшим количеством SNP
+- 3.2) Подсчитайте количество SNP на экзон
+- 3.3) Сортировка экзонов по количеству SNP
+- 3.4) Выберите пять верхних экзонов
+- 3.5) Восстановление информации об экзоне
+- 3.6) Отображение данных в браузере генома UCSC
+4) Управление Galaxy
+- 4.1) Преобразуйте историю анализа в рабочий процесс
+- 4.2) Редактор рабочего процесса
+- 4.3) Запуск рабочего процесса на разных данных
+- 4.4) Поделитесь своей работой
+5. Вывод
+______________________________________________________________________
