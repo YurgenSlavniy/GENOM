@@ -1019,3 +1019,64 @@ ______________________________________________________________________
 - 4.4) Поделитесь своей работой
 5. Вывод
 ______________________________________________________________________
+
+# Setting the stage: Exons and SNPs
+
+`We start with the question:` In human chromosome 22, which exon has the highest number of single nucleotide polymorphisms (SNPs)?
+
+`Comment:` Background
+
+Not everyone has the same background and that’s ok! You may have studied different organisms with different gene models, or you may not be familiar with the biological aspect at all. The biological background is not necessary for following this tutorial, we just like to provide research context for any tutorial. Here are brief explanations of some of the concepts mentioned in this tutorial:
+
+- **Nucleotides** are the A, C, T, and Gs that make up DNA.
+- **Chromosomes** can be thought of as a very long piece of DNA (string of A, C, T, Gs) Some organisms have chromosomes, in this tutorial we will use Human chromosome number 22.
+- **Features** are regions of the chromosome that are interesting for one reason or another. Some examples of features include genes, terminators, transcription start sites, and repeat regions.
+- **Genes** are one kind of interesting feature, a region that will be transcribed into RNA before being translated into proteins.
+- **Exons** are fundamental components of eukaryotic genes. A typical eukaryotic gene contains numerous exons separated by introns. An entire gene containing both exons and introns is transcribed into a pre-messenger RNA or pre-mRNA. During maturation introns are excised from the pre-mRNA in a process called splicing. A mature messenger RNA, or simply mRNA, is then translated into protein during the process of translation.
+```
+DNA -> 1Exon - intron - 2Exon - intron - 3Exon - intron (spiral)
+RNA -> 1Exon - intron - 2Exon - intron - 3Exon - intron (one line)
+mRNA -> 1Exon_spectrum - 2Exon_spectrum - 3Exon_spectrum (one line)
+
+```
+`Figure 1:` An original piece of DNA containing introns and exons has the introns cut out before the exons are joined together to form the mRNA. (Image from WikiMedia, under the Public Domain)
+
+SNP is an abbreviation for single-nucleotide polymorphism. It is pronounced as “snip”. SNPs are single nucleotide differences between a sequenced individual compared to some reference sequence; where one individual might have an A, another could have a C in that position. Databases of SNPs have been created for many organisms and they include any single nucleotide deviation from the reference sequence which appears in some percentage of the population (e.g. >1%). These are often especially interesting to geneticists as the causes of certain inheritable diseases.
+
+You may be familiar with the UCSC Genome Browser https://genome.ucsc.edu/ or another resource like it, and know that you can find the data there. But even with your data in hand, you still have the question: “how do I actually compute this?” There is really a straightforward answer: Galaxy. So let’s try it…
+
+Browse to your favorite Galaxy instance and log in or register.
+
+______________________________________________________________________
+
+# Подготовка к этапу: экзоны и SNP
+
+`Начнем с вопроса:` какой экзон хромосомы 22 человека имеет наибольшее количество однонуклеотидных полиморфизмов (SNP)?
+
+`Комментарий:` Бэкграунд - прошлый опыт. 
+
+Не у всех одинаковый опыт и бэкграунд, и это нормально! Возможно, вы изучали разные организмы с разными моделями генов или вообще не знакомы с биологическим аспектом. Биологический бэкграунд не обязателен для изучения этого урока, нам просто нравится предоставлять исследовательский контекст для любого урока. Вот краткие пояснения некоторых концепций, упомянутых в этом руководстве:
+
+- **Нуклеотиды** — это A, C, T и G, из которых состоит ДНК.
+- **Хромосомы** можно рассматривать как очень длинный фрагмент ДНК (цепочка A, C, T, G). У некоторых организмов есть хромосомы, в этом уроке мы будем использовать хромосому человека номер 22.
+- **Особенности** — это участки хромосомы, представляющие интерес по той или иной причине. Некоторые примеры признаков включают гены, терминаторы, сайты начала транскрипции и области повторов.
+- **Гены** — это одна из интересных особенностей, область, которая будет транскрибироваться в РНК, прежде чем транслироваться в белки.
+- **Экзоны** являются фундаментальными компонентами эукариотических генов. Типичный эукариотический ген содержит множество экзонов, разделенных интронами. Целый ген, содержащий как экзоны, так и интроны, транскрибируется в пре-мессенджерную РНК или пре-мРНК. Во время созревания интроны вырезаются из пре-мРНК в процессе, называемом сплайсингом. Затем в процессе трансляции зрелая информационная РНК или просто мРНК транслируется в белок.
+```
+DNA -> 1Exon - intron - 2Exon - intron - 3Exon - intron (spiral)
+RNA -> 1Exon - intron - 2Exon - intron - 3Exon - intron (one line)
+mRNA -> 1Exon_spectrum - 2Exon_spectrum - 3Exon_spectrum (one line)
+
+```
+`Рисунок 1:` В исходном фрагменте ДНК, содержащем интроны и экзоны, интроны вырезаются до того, как экзоны соединяются вместе, образуя мРНК. (Изображение из WikiMedia, находящееся в общественном достоянии)
+
+SNP является аббревиатурой однонуклеотидного полиморфизма. Произносится как «снип». SNP представляют собой различия в отдельных нуклеотидах между секвенированным индивидуумом по сравнению с некоторой эталонной последовательностью; где у одного человека может быть A, у другого может быть C в этой позиции. Базы данных SNP были созданы для многих организмов, и они включают любое отклонение одного нуклеотида от эталонной последовательности, которое встречается в некотором проценте популяции (например, > 1%). Часто они представляют особый интерес для генетиков как причины некоторых наследственных заболеваний.
+
+Возможно, вы знакомы с UCSC Genome Browser https://genome.ucsc.edu/ или другим подобным ресурсом и знаете, что можете найти там данные. Но даже с вашими данными у вас все еще есть вопрос: «Как я могу это вычислить?» На самом деле есть простой ответ: *Galaxy*. Итак, давайте попробуем…
+
+Перейдите к своему любимому экземпляру Galaxy и войдите в систему или зарегистрируйтесь.
+
+______________________________________________________________________
+
+
+  
