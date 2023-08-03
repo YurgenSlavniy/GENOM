@@ -1141,3 +1141,31 @@ ______________________________________________________________________
 
 Когда вы запускаете Galaxy в первый раз, ваша история будет пустой. Добавим к нему некоторые данные.
 ______________________________________________________________________
+`Hands-on:` Create history
+
+Make sure you start from an empty analysis history.
+
+`Creating a new` history:
+
+1) Click '+' the new-history icon at the top of the history panel.
+
+If the '+' new-history is missing:
+- Click on the galaxy-gear icon (History options) on the top of the history panel
+- Select the option Create New from the menu
+
+2) `Rename` your history to be meaningful and easy to find. You can do this by clicking on the title of the history (which by default is Unnamed history) and typing Galaxy 101 as the name. Do not forget to hit the Enter key on your keyboard to save it.
+______________________________________________________________________
+`Практика:` Создание истории
+
+Убедитесь, что вы начинаете с пустой истории анализа.
+
+`Создание новой` истории:
+
+1) Нажмите «+» на значок новой истории в верхней части панели истории.
+
+Если новая история «+» отсутствует:
+- Нажмите на значок шестеренки галактики (параметры истории) в верхней части панели истории.
+- Выберите опцию «Создать новый» в меню.
+
+2) «Переименуйте» свою историю, чтобы она была осмысленной и ее было легко найти. Вы можете сделать это, щелкнув заголовок истории (по умолчанию это Безымянная история) и введя Galaxy 101 в качестве имени. Не забудьте нажать клавишу Enter на клавиатуре, чтобы сохранить его.
+______________________________________________________________________
