@@ -1077,6 +1077,67 @@ SNP является аббревиатурой однонуклеотидног
 Перейдите к своему любимому экземпляру Galaxy и войдите в систему или зарегистрируйтесь.
 
 ______________________________________________________________________
+# How do I create an account on a public Galaxy instance?
 
+1) To create an account at any public Galaxy instance, choose your server from the available list of Galaxy Platforms.
+There are 3 main public Galaxy servers:
 
+- UseGalaxy.org, 
+- UseGalaxy.eu, 
+- UseGalaxy.org.au.
+
+2) Click on “Login or Register” in the masthead on the server.
+3) On the login page, find the Register here link and click on it.
+4) Fill in the the registration form, then click on Create.
   
+Your account should now get created, but will remain inactive until you verify the email address you provided in the registration form.
+
+5) Check for a Confirmation Email in the email you used for account creation.
+6) Click on the Email confirmation link to fully activate your account.
+
+galaxy-info Delivery of the confimation email is blocked by your email provider or you mistyped the email address in the registration form?
+
+Please do not register again, but follow the instructions to change the email address registered with your account! The confirmation email will be resent to your new address once you have changed it.
+______________________________________________________________________
+# Как создать учетную запись в общедоступном экземпляре Galaxy?
+
+1) Чтобы создать учетную запись в любом общедоступном экземпляре Galaxy, выберите свой сервер из доступного списка платформ Galaxy.
+Есть 3 основных общедоступных сервера Galaxy:
+
+- Используйте Galaxy.org,
+- Используйте Galaxy.eu,
+- Используйте Galaxy.org.au.
+
+2) Нажмите «Войти или зарегистрироваться» в шапке на сервере.
+3) На странице входа найдите ссылку «Регистрация здесь» и нажмите на нее.
+4) Заполните регистрационную форму, затем нажмите «Создать».
+  
+Теперь ваша учетная запись должна быть создана, но она останется неактивной, пока вы не подтвердите адрес электронной почты, указанный в регистрационной форме.
+
+5) Проверьте наличие письма с подтверждением в электронном письме, которое вы использовали для создания учетной записи.
+6) Нажмите на ссылку подтверждения по электронной почте, чтобы полностью активировать свою учетную запись.
+
+galaxy-info Доставка электронного письма с подтверждением заблокирована вашим провайдером электронной почты или вы неправильно указали адрес электронной почты в регистрационной форме?
+
+Пожалуйста, не регистрируйтесь снова, а следуйте инструкциям по изменению адреса электронной почты, зарегистрированного в вашей учетной записи! Письмо с подтверждением будет повторно отправлено на ваш новый адрес, как только вы его измените.  
+______________________________________________________________________
+The `Galaxy interface` consists of three main parts:
+
+- The available Tools are listed on the left
+- The Central Panel will let you run analyses and view outputs
+- Your analysis History is recorded on the right
+
+Galactic triptych: the three panels of Galaxy interface: Tools, Center Panel, and History
+
+When you start Galaxy for very first time, your history will be empty. Let’s add some data to it.
+______________________________________________________________________
+«Интерфейс Galaxy» состоит из трех основных частей:
+
+- Доступные инструменты перечислены слева
+- Центральная панель позволит вам запускать анализы и просматривать результаты
+- История вашего анализа записывается справа
+
+Галактический триптих: три панели интерфейса Galaxy: инструменты, центральная панель и история.
+
+Когда вы запускаете Galaxy в первый раз, ваша история будет пустой. Добавим к нему некоторые данные.
+______________________________________________________________________
