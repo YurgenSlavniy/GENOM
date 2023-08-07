@@ -1169,3 +1169,57 @@ ______________________________________________________________________
 
 2) «Переименуйте» свою историю, чтобы она была осмысленной и ее было легко найти. Вы можете сделать это, щелкнув заголовок истории (по умолчанию это Безымянная история) и введя Galaxy 101 в качестве имени. Не забудьте нажать клавишу Enter на клавиатуре, чтобы сохранить его.
 ______________________________________________________________________
+# Locating Exons
+
+First we need to get some data into our history. You can upload files from your computer, or Galaxy can also fetch data directly from external sources. We know UCSC has exon locations for humans and we can use Galaxy to import the data for chromosome 22, directly from the UCSC table browser.
+
+`Hands-on:` Upload SNPs and Exons
+
+1) At the top of the `Tools panel` (on the left), click galaxy-upload `Upload Data`
+This brings up a box:
+
+2) Click `Paste/Fetch` data and paste in the following URLs in the box that appears.
+
+- https://zenodo.org/record/4104428/files/UCSC-hg38-chr22-Coding-Exons.bed
+- https://zenodo.org/record/4104428/files/UCSC-hg38-chr22-dbSNP153-Whole-Gene-SNPs.bed
+
+3) Click `Start`, and then `Close`
+
+4) When they are ready, `rename` galaxy-pencil the datasets to Exons and SNPs, respectively.
+
+***renaming dataset***
+- Click on the galaxy-pencil pencil icon for the dataset to edit its attributes
+- In the central panel, change the Name field
+- Click the Save button
+
+For this tutorial, we made the input datasets available on Zenodo for you. However, these datasets can also obtained directly from UCSC, without leaving Galaxy. Below we describe how you can do this, but it is not necessary for this tutorial. Note that since the data in UCSC is updated frequently, you might get slightly different results in the rest of this tutorial if you use these files.
+
+`Comment:` In order to get the datasets from the UCSC server, you need to have an account in an instance.
+______________________________________________________________________
+# Обнаружение экзонов
+
+Сначала нам нужно получить некоторые данные в нашу историю. Вы можете загружать файлы со своего компьютера, или Galaxy также может получать данные напрямую из внешних источников. Мы знаем, что в UCSC есть расположение экзонов для человека, и мы можем использовать Galaxy для импорта данных для хромосомы 22 непосредственно из браузера таблиц UCSC.
+
+Практические занятия: загрузка SNP и экзонов
+
+1) В верхней части панели «Инструменты» (слева) нажмите galaxy-upload «Загрузить данные».
+Это вызывает окно.
+
+2) Нажмите «Вставить/выбрать» данные и вставьте следующие URL-адреса в появившееся поле.
+
+- https://zenodo.org/record/4104428/files/UCSC-hg38-chr22-Coding-Exons.bed
+- https://zenodo.org/record/4104428/files/UCSC-hg38-chr22-dbSNP153-Whole-Gene-SNPs.bed
+
+3) Нажмите «Пуск», а затем «Закрыть».
+
+4) Когда они будут готовы, «переименуйте» в Exons и SNP соответственно.
+
+***переименование набора данных***
+- Нажмите на значок карандаша для набора данных, чтобы изменить его атрибуты.
+- В центральной панели изменить поле Имя
+- Нажмите кнопку Сохранить
+
+Для этого руководства мы сделали наборы входных данных доступными для вас в Zenodo. Однако эти наборы данных также можно получить напрямую из UCSC, не покидая Galaxy. Ниже мы опишем, как вы можете это сделать, но это не обязательно для этого урока. Обратите внимание, что, поскольку данные в UCSC часто обновляются, вы можете получить немного другие результаты в оставшейся части этого руководства, если будете использовать эти файлы.
+
+`Комментарий:` Чтобы получить наборы данных с сервера UCSC, вам необходимо иметь учетную запись в экземпляре.
+______________________________________________________________________
