@@ -1223,3 +1223,123 @@ ______________________________________________________________________
 
 `Комментарий:` Чтобы получить наборы данных с сервера UCSC, вам необходимо иметь учетную запись в экземпляре.
 ______________________________________________________________________
+# Tip. Optional. Obtaining the data directly from *UCSC*
+
+This tool works a bit differently than most Galaxy tools, but if you wish to obtain the newest data from UCSC, you can do that as follows:
+
+`Hands-on:` Obtaining Exons from UCSC
+
+1) UCSC Main tool table browser:
+
+In the tool menu, navigate to `Get Data -> UCSC Main table browser` You will be taken to the UCSC table browser, which looks something like this:
+
+Now set the following parameters:
+- “clade”: `Mammal`
+- “genome”: `Human`
+- “assembly”: `Dec. 2013 (GRCh38/hg38)`
+- “group”: `Genes and Gene Predictions`
+- “track”: `GENCODE v36` (or a more recent version)
+- “table”: `knownGene`
+- “region”: should be changed to `position` with value `chr22`
+- “output format”: should be changed to `BED - browser extensible data`
+- param-check “Send output to” should have the option `Galaxy` checked
+
+`Comment:` If the “table” drop down menu does not show the knownGene option. Set “group” to All tables and scroll down.
+
+2) Click on the get output button and you will see the next screen:
+
+Change Create one BED record per to Coding Exons and then click on the Send query to Galaxy button.
+
+`Comment:` After this you will see your first history item in Galaxy’s right panel. It will go through the gray (preparing/queued) and yellow (running) states to become green (success):
+
+You might need to login to Galaxy again.
+
+3) When the dataset is green, click on the galaxy-eye (eye) icon to view the contents of the file. It should look something like this:
+
+Each line represents an exon, the first three columns are the genomic location, and the fourth column contains the name of the exon.
+
+4) Let’s rename our dataset to something more recognizable.
+- Click on the galaxy-pencil pencil icon for the dataset to edit its attributes
+- In the central panel, change the Name field to Exons
+- Click the Save button
+
+
+We now have information about the exon locations, but our original question was which exon contains the largest number of SNPs, so let’s get some information about SNP locations from UCSC as well:
+
+`Hands-on:` Obtaining SNPs from UCSC
+
+Again open the UCSC Main table browser tool and set the following parameters
+
+1) UCSC Main tool table browser:
+- “group” should be changed to Variation
+- param-text “region” should be changed again to position with value chr22
+- “output format” should be changed again to BED - browser extensible data
+
+The “track” setting shows the version of the SNP database to get. In this example it is version 151, but you may select the latest one. Your results may vary slightly from the ones in this tutorial when you select a different version, but in general it is a good idea to select the latest version, as this will contain the most up-to-date SNP information.
+
+2) Click on the get output button to find a form similar to this:
+
+Make sure that “Create one BED record per” is set to Whole Gene (Whole Gene here really means Whole Feature), and click on Send query to Galaxy. A second item will appear in your analysis history.
+
+3) Now rename galaxy-pencil your new dataset to SNPs so we can easily remember what the file contains.
+______________________________________________________________________
+# Кончик. Необязательный. Получение данных напрямую из *UCSC*
+
+Этот инструмент работает немного иначе, чем большинство инструментов Galaxy, но если вы хотите получить самые свежие данные из UCSC, вы можете сделать это следующим образом:
+
+Практический опыт: получение экзонов от UCSC
+
+1) Браузер таблицы основных инструментов UCSC:
+
+В меню инструментов перейдите к «Получить данные -> Браузер основной таблицы UCSC». Вы попадете в браузер таблицы UCSC, который выглядит примерно так:
+
+Теперь установите следующие параметры:
+- «клада»: «Млекопитающее»
+- «геном»: «человек»
+- «сборка»: `дек. 2013 (ГРЧ38/hg38)`
+- «группа»: «Гены и предсказания генов»
+- «дорожка»: `GENCODE v36` (или более поздняя версия)
+- «таблица»: `knownGene`
+- «регион»: следует заменить на «позиция» со значением «chr22».
+- «выходной формат»: следует изменить на «BED — расширяемые данные браузера».
+- Параметр-проверка «Отправить вывод» должна иметь отмеченную опцию «Галактика».
+
+`Комментарий:` Если в раскрывающемся меню «таблица» не отображается параметр knownGene. Установите для параметра «группа» значение «Все столы» и прокрутите вниз.
+
+2) Нажмите кнопку «Получить вывод», и вы увидите следующий экран:
+
+Изменить Создайте одну запись BED для кодирующих экзонов, а затем нажмите кнопку «Отправить запрос в Galaxy».
+
+`Комментарий:` После этого вы увидите свой первый элемент истории на правой панели Galaxy. Он пройдет через серое (подготовка/в очереди) и желтое (выполняется) состояния, чтобы стать зеленым (успех):
+
+Возможно, вам придется снова войти в Galaxy.
+
+3) Когда набор данных станет зеленым, щелкните значок галактического глаза (глаза), чтобы просмотреть содержимое файла. Это должно выглядеть примерно так:
+
+Каждая строка представляет собой экзон, первые три столбца — расположение в геноме, а четвертый столбец содержит название экзона.
+
+4) Давайте переименуем наш набор данных во что-то более узнаваемое.
+- Нажмите на значок карандаша галактики для набора данных, чтобы изменить его атрибуты.
+- В центральной панели измените поле Имя на Exons
+- Нажмите кнопку Сохранить
+
+
+Теперь у нас есть информация о расположении экзонов, но наш первоначальный вопрос заключался в том, какой экзон содержит наибольшее количество SNP, поэтому давайте также получим некоторую информацию о расположении SNP из UCSC:
+
+Практический опыт: Получение SNP от UCSC
+
+Снова откройте инструмент браузера основной таблицы UCSC и установите следующие параметры.
+
+1) Браузер таблицы основных инструментов UCSC:
+- «группа» должна быть изменена на вариацию
+- параметр-текст «регион» должен быть снова изменен на позицию со значением chr22
+- «выходной формат» следует снова изменить на BED - расширяемые данные браузера
+
+Параметр «отслеживать» показывает версию базы данных SNP, которую нужно получить. В данном примере это версия 151, но вы можете выбрать самую последнюю. Ваши результаты могут немного отличаться от результатов в этом руководстве, если вы выберете другую версию, но в целом рекомендуется выбирать самую последнюю версию, так как она будет содержать самую актуальную информацию SNP.
+
+2) Нажмите кнопку «Получить вывод», чтобы найти форму, подобную этой:
+
+Убедитесь, что для параметра «Создать одну запись BED за» установлено значение «Весь ген» (здесь «Весь ген» означает «Вся функция») и нажмите «Отправить запрос в Galaxy». Второй элемент появится в вашей истории анализа.
+
+3) Теперь переименуйте свой новый набор данных galaxy-pencil в SNP, чтобы мы могли легко запомнить, что содержится в файле.
+______________________________________________________________________
